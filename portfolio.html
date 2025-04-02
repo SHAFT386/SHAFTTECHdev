@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <title>Portfolio | Tenshaft Web Design</title>
+    <link rel="stylesheet" href="css/s.css">
+</head>
+<body>
+    <!-- Same header as index.html -->
+
+    <section class="portfolio-page section-padding">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p class="lead">A selection of my recent web design projects</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="blog">Blog</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="ecommerce">
+                    <img src="images/project1.jpg" alt="E-Commerce Project">
+                    <div class="portfolio-overlay">
+                        <h3>Online Fashion Store</h3>
+                        <p>E-Commerce</p>
+                        <a href="portfolio/project1.html" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="corporate">
+                    <img src="images/project2.jpg" alt="Corporate Website">
+                    <div class="portfolio-overlay">
+                        <h3>Financial Services Website</h3>
+                        <p>Corporate</p>
+                        <a href="portfolio/project2.html" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portfolio">
+                    <img src="images/project3.jpg" alt="Photography Portfolio">
+                    <div class="portfolio-overlay">
+                        <h3>Photographer Portfolio</h3>
+                        <p>Portfolio</p>
+                        <a href="portfolio/project3.html" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="blog">
+                    <img src="images/project4.jpg" alt="Travel Blog">
+                    <div class="portfolio-overlay">
+                        <h3>Travel Blog</h3>
+                        <p>Blog</p>
+                        <a href="portfolio/project4.html" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ecommerce">
+                    <img src="images/project5.jpg" alt="Electronics Store">
+                    <div class="portfolio-overlay">
+                        <h3>Electronics E-Commerce</h3>
+                        <p>E-Commerce</p>
+                        <a href="portfolio/project5.html" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="corporate">
+                    <img src="images/project6.jpg" alt="Law Firm Website">
+                    <div class="portfolio-overlay">
+                        <h3>Law Firm Website</h3>
+                        <p>Corporate</p>
+                        <a href="portfolio/project6.html" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+
+    <script>
+        // Portfolio filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="js/D.js"></script>
+</body>
+</html>

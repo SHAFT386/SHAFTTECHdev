@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SHAFT TECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/s.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">SHAFT TECH</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:tenshaft386@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:0709835204"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/2347009835204" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-page section-padding">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p class="lead">Have a project in mind or want to discuss your web design needs? I'd love to hear from you.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form id="contactForm" action="send-email.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="support">Support Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out through any of these channels:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:nshaft386@gmail.com">nshaft386@gmail.com</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <a href="tel:256709835204">256709835204</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/234709835204">Chat on WhatsApp</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Kasubi, Kampala, Uganda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 9am - 6pm</p>
+                        <p>Saturday: 10am - 3pm</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h2>Find My Location</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753622315518!2d32.54986031475395!3d0.331599999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb6c2c5b3189%3A0x9b9b9b9b9b9b9b9b!2sKasubi%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1629999999999!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SHAFT TECH</h3>
+                    <p>Professional web design services with a focus on responsive, modern websites that drive results.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> tenshaft386@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 07009835204</li>
+                        <li><i class="fab fa-whatsapp"></i> 07009835204</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kasubi, Kampala, Uganda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SHAFT TECH. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256709835204" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/D.js"></script>
+</body>
+</html>
